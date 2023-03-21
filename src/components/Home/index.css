@@ -1,0 +1,243 @@
+.light-full-container {
+  background-color: #cccccc;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Dark-full-container {
+  background-color: #0f0f0f;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Dark-container {
+  background-color: #231f20;
+  width: 20vw;
+  height: 10px;
+  color: #0f0f0f;
+}
+
+.container {
+  display: flex;
+}
+.Header-class {
+  position: fixed;
+}
+
+.options-class {
+  position: fixed;
+}
+
+.searchStyle {
+  height: 40px;
+  width: 500px;
+  color: #7e858e;
+  font-size: 18px;
+  font-family: 'Roboto';
+  border: 0px #7e858e solid;
+}
+
+.search-container {
+  height: 46px;
+  width: 600px;
+  color: #7e858e;
+  border: 2px #7e858e solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  background-color: #ffffff;
+  margin: 15px;
+}
+
+.search-logo {
+  height: 35px;
+  width: 35px;
+  padding: 7px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.website-logo-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+  margin: 20px;
+  width: 80vw;
+  height: 60vh;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.nxt-watch-logo {
+  height: 60px;
+  width: 200px;
+}
+
+.new-list-item1 {
+  list-style-type: none;
+  background-color: #ffffff;
+  height: 450px;
+  width: 300px;
+  margin: 10px;
+}
+
+.thumbnail-style {
+  height: 250px;
+  width: 300px;
+}
+
+.sub-list1 {
+  display: flex;
+}
+
+.list-heading {
+  font-size: 17px;
+}
+
+.channel-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.main-list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sub-list2 {
+  display: flex;
+}
+
+.list-description {
+  padding-right: 10px;
+}
+
+.Failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-failure-heading {
+  color: #1e293b;
+  font-size: 28px;
+  font-family: 'Roboto';
+}
+
+.Dark-failure-heading {
+  color: #ffffff;
+  font-size: 28px;
+  font-family: 'Roboto';
+}
+
+.light-failure-para {
+  color: #475569;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.Dark-failure-para {
+  color: #e2e8f0;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.Retry-button {
+  background-color: #4656a1;
+  height: 40px;
+  width: 150px;
+  color: #ffffff;
+  font-size: 18px;
+  border: 0px solid;
+  text-align: center;
+}
+
+.failure-logo {
+  height: 400px;
+  width: 400px;
+}
+
+.light-no-videos-heading {
+  color: #1e293b;
+  font-size: 28px;
+  font-family: 'Roboto';
+}
+
+.light-no-videos-para {
+  color: #475569;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.Dark-no-videos-heading {
+  color: #ffffff;
+  font-size: 28px;
+  font-family: 'Roboto';
+}
+
+.Dark-no-videos-para {
+  color: #cbd5e1;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.No-Videos-logo {
+  height: 300px;
+  width: 300px;
+}
+
+.Empty-view-container {
+  text-align: center;
+}
+
+.light-overflow-container {
+  overflow: auto;
+  background-color: #cccccc;
+  height: 100vh;
+  width: 90vw;
+}
+
+.Dark-overflow-container {
+  overflow: auto;
+  background-color: #0f0f0f;
+  height: 100vh;
+  width: 90vw;
+}
+
+.close-button {
+  height: 45px;
+  width: 45px;
+  background-color: #ffffff;
+  border: 0px solid;
+}
+
+.close-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.search-button {
+  height: 41px;
+  width: 45px;
+  background-color: #ffffff;
+  border: 0px solid;
+}
+
+.Buy-it-para {
+  font-size: 25px;
+  color: #0f0f0f;
+  font-family: 'Roboto';
+}
+
+.Get-button {
+  height: 45px;
+  width: 200px;
+  font-size: 23px;
+}

@@ -1,0 +1,135 @@
+.light-left-container {
+  background-color: #ffffff;
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+.Dark-left-container {
+  background-color: #231f20;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.social-logo {
+  height: 50px;
+  width: 50px;
+  padding-right: 15px;
+}
+
+.list-container2 {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.light-para1 {
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 15px;
+}
+
+.Dark-para1 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 5px;
+}
+
+.list-container1 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.light-logo-style {
+  height: 45px;
+  width: 45px;
+  color: #475569;
+  padding-top: 15px;
+}
+
+.Dark-logo-style {
+  color: #94a3b8;
+  height: 45px;
+  width: 45px;
+  padding-top: 15px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.light-para {
+  color: #475569;
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.Dark-para {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.click-list-button {
+  height: 50px;
+  width: 200px;
+  border: 0px solid;
+  display: flex;
+  background-color: #909090;
+  margin: 10px;
+}
+
+.Not-click-list-button {
+  height: 50px;
+  width: 200px;
+  border: 0px solid;
+  display: flex;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.No-click-dark-theme-para {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.click-dark-theme-para {
+  color: #ff0000;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.click-light-theme-para {
+  color: #4f46e5;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.No-click-light-theme-para {
+  color: #0f0f0f;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+  font-weight: bold;
+}

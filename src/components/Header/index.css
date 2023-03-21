@@ -1,0 +1,129 @@
+.Dark-background {
+  background-color: #231f20;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  height: 12vh;
+}
+
+.Light-background {
+  background-color: #ffffff;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  height: 12vh;
+}
+
+.Dark-logout {
+  background-color: transparent;
+  height: 30px;
+  width: 150px;
+  border: 2px #ffffff solid;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+}
+
+.light-logout {
+  background-color: #ffffff;
+  height: 30px;
+  width: 150px;
+  border: 2px #4f46e5 solid;
+  color: #4f46e5;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+}
+
+.image-style {
+  height: 90px;
+  width: 1100px;
+  align-self: flex-start;
+  padding-top: 20px;
+  padding-right: 950px;
+  padding-left: 30px;
+}
+
+.custom-button {
+  height: 40px;
+  width: 60px;
+  background-color: transparent;
+  border: 0px solid;
+  margin-right: 20px;
+}
+
+.image-style2 {
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+}
+
+.sub-container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.light-popup-content {
+  background-color: #ffffff;
+  height: 30vh;
+  width: 30vw;
+}
+
+.Dark-popup-content {
+  background-color: #231f20;
+  height: 30vh;
+  width: 30vw;
+}
+
+.light-popup-para {
+  color: #181818;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+
+.Dark-popup-para {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+
+.light-cancelButton {
+  height: 30px;
+  width: 150px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: #181818;
+  margin-right: 20px;
+}
+
+.Dark-cancelButton {
+  height: 30px;
+  width: 150px;
+  background-color: #181818;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px #ffffff;
+  margin-right: 20px;
+}
+
+.confirm-button {
+  background-color: #4656a1;
+  height: 30px;
+  width: 150px;
+  color: #ffffff;
+  font-size: 15px;
+  border: 0px solid;
+  text-align: center;
+}
+
+.buttons-container1 {
+  display: flex;
+}

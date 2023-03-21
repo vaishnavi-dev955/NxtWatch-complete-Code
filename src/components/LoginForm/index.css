@@ -1,0 +1,195 @@
+.light-main-container {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Light-Form-container {
+  background-color: #ffffff;
+  height: 80vh;
+  width: 35vw;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.Dark-Form-container {
+  background-color: #0f0f0f;
+  height: 80vh;
+  width: 35vw;
+  display: flex;
+  border-radius: 10px;
+}
+
+.Website-Nxtwatch-image {
+  height: 80px;
+  width: 200px;
+  align-self: center;
+}
+
+.light-login-container {
+  height: 80vh;
+  width: 35vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dark-login-container {
+  height: 80vh;
+  width: 35vw;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-label-style {
+  color: #94a3b8;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding-top: 20px;
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.Dark-label-style {
+  color: #f9f9f9;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding-top: 20px;
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.light-input-style {
+  background-color: #ffffff;
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  color: #c3cad9;
+  font-size: 20px;
+  padding-left: 20px;
+  border-color: #94a3b8;
+  border-width: 2px;
+  margin-top: 15px;
+  align-self: flex-start;
+  border-style: solid;
+}
+
+.Dark-input-style {
+  background-color: #0f0f0f;
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  color: #f9f9f9;
+  font-size: 20px;
+  padding-left: 20px;
+  border-color: #1e293b;
+  border-width: 2px;
+  margin-top: 15px;
+  align-self: flex-start;
+  border-style: solid;
+}
+
+.login-button {
+  color: #ffffff;
+  font-size: 20px;
+  height: 40px;
+  width: 400px;
+  background-color: #1565d8;
+  border: 0px solid;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+.Error-msg {
+  color: #ff0b37;
+  font-size: 18px;
+  font-family: 'Roboto';
+  align-self: flex-start;
+}
+
+.light-check-box-style {
+  background-color: #ffffff;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  border: #94a3b8 2px solid;
+  border-radius: 5px;
+  align-self: flex-start;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.Dark-check-box-style {
+  background-color: #ffffff;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  border: 0px solid;
+  border-radius: 5px;
+  align-self: flex-start;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.light-show-password {
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.Dark-show-password {
+  color: #f9f9f9;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.light-check-box-container {
+  background-color: #ffffff;
+  height: 60px;
+  width: 250px;
+  border: 0px solid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 258px;
+  margin-top: 10px;
+}
+
+.Dark-check-box-container {
+  background-color: #0f0f0f;
+  height: 60px;
+  width: 250px;
+  border: 0px solid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 258px;
+  margin-top: 10px;
+}
+
+.Dark-main-container {
+  background-color: #212121;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

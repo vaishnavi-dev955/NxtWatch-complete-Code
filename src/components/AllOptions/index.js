@@ -123,20 +123,22 @@ const AllOptions = () => (
                 </button>
               </Listitem>
             </Link>
-            <Listitem>
-              <button
-                type="button"
-                onClick={onClickGamingButton}
-                className={GamingButton}
-              >
-                <SiYoutubegaming className={logoStyle} />
-                {isDarkBtnTheme ? (
-                  <p className={darkThemeGamingPara}>Gaming</p>
-                ) : (
-                  <p className={lightThemeGamingPara}>Gaming</p>
-                )}
-              </button>
-            </Listitem>
+            <Link to="/gaming">
+              <Listitem>
+                <button
+                  type="button"
+                  onClick={onClickGamingButton}
+                  className={GamingButton}
+                >
+                  <SiYoutubegaming className={logoStyle} />
+                  {isDarkBtnTheme ? (
+                    <p className={darkThemeGamingPara}>Gaming</p>
+                  ) : (
+                    <p className={lightThemeGamingPara}>Gaming</p>
+                  )}
+                </button>
+              </Listitem>
+            </Link>
             <Listitem>
               <button
                 type="button"

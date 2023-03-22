@@ -1,0 +1,28 @@
+.new-Trending-list-item1 {
+  list-style-type: none;
+  background-color: #ffffff;
+  height: 300px;
+  width: 1000px;
+  margin: 10px;
+  display: flex;
+  margin: 30px;
+}
+
+.trending-thumbnail-style {
+  height: 300px;
+  width: 500px;
+  margin-right: 20px;
+}
+
+.trending-list-heading {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.sub-list-trending2 {
+  display: flex;
+}
+
+.trending-list-description {
+  padding-right: 10px;
+}

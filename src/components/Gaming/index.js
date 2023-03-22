@@ -1,11 +1,11 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
-import {HiOutlineFire} from 'react-icons/hi'
+import {SiYoutubegaming} from 'react-icons/si'
 import Header from '../Header'
-import NxtWatchContext from '../../Context/NxtWatchContext'
 import AllOptions from '../AllOptions'
-import TrendingVideoItem from '../TrendingVideoItem'
+import NxtWatchContext from '../../Context/NxtWatchContext'
+import GamingVideoItem from '../GamingVideoItem'
 import './index.css'
 
 const apiConstants = {
@@ -15,17 +15,17 @@ const apiConstants = {
   inProgress: 'INPROGRESS',
 }
 
-class Trending extends Component {
-  state = {TrendingVideosData: [], apiStatus: apiConstants.initial}
+class Gaming extends Component {
+  state = {GamingVideosData: [], apiStatus: apiConstants.initial}
 
   componentDidMount() {
-    this.getTrendingVideos()
+    this.getGameVideosData()
   }
 
-  getTrendingVideos = async () => {
+  getGameVideosData = async () => {
     this.setState({apiStatus: apiConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
-    const Url = 'https://apis.ccbp.in/videos/trending'
+    const Url = 'https://apis.ccbp.in/videos/gaming'
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -33,26 +33,18 @@ class Trending extends Component {
       method: 'GET',
     }
     const response = await fetch(Url, options)
+    console.log(response)
     if (response.ok === true) {
       const data = await response.json()
       console.log(data)
-      const UpdatingChannelData = Item => {
-        const updatedChannel = {
-          name: Item.name,
-          profileImageUrl: Item.profile_image_url,
-        }
-        return updatedChannel
-      }
       const UpdatedData = data.videos.map(eachItem => ({
-        channel: UpdatingChannelData(eachItem.channel),
         id: eachItem.id,
-        publishedAt: eachItem.published_at,
         thumbnailUrl: eachItem.thumbnail_url,
         title: eachItem.title,
         viewCount: eachItem.view_count,
       }))
       this.setState({
-        TrendingVideosData: UpdatedData,
+        GamingVideosData: UpdatedData,
         apiStatus: apiConstants.success,
       })
     } else {
@@ -61,39 +53,40 @@ class Trending extends Component {
   }
 
   onSuccessView = () => {
-    const {TrendingVideosData} = this.state
+    const {GamingVideosData} = this.state
     return (
-      <div>
-        <ul>
-          {TrendingVideosData.map(eachItem => (
-            <TrendingVideoItem
-              TrendingVideoItemData={eachItem}
-              key={eachItem.id}
-            />
-          ))}
-        </ul>
-      </div>
+      <ul className="Gaming-list-container">
+        {GamingVideosData.map(eachItem => (
+          <GamingVideoItem GamingVideoItemData={eachItem} key={eachItem.id} />
+        ))}
+      </ul>
     )
   }
 
-  onClickRetryButton = () => this.getTrendingVideos()
+  onLoadingView = () => (
+    <div data-testid="loader">
+      <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
+    </div>
+  )
+
+  onClickRetryGamingButton = () => this.getGameVideosData()
 
   onFailureView = () => (
     <NxtWatchContext.Consumer>
       {value => {
         const {isDarkBtnTheme} = value
         return (
-          <div className="Failure-trending-container">
+          <div className="Failure-Gaming-container">
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png"
               alt="failure view"
-              className="failure-trending-logo"
+              className="failure-Gaming-logo"
             />
             <h1
               className={
                 isDarkBtnTheme
-                  ? 'Dark-failure-trending-heading'
-                  : 'light-failure-trending-heading'
+                  ? 'Dark-failure-Gaming-heading'
+                  : 'light-failure-Gaming-heading'
               }
             >
               Oops! Something Went Wrong
@@ -101,8 +94,8 @@ class Trending extends Component {
             <p
               className={
                 isDarkBtnTheme
-                  ? 'Dark-failure-trending-para'
-                  : 'light-failure-trending-para'
+                  ? 'Dark-failure-Gaming-para'
+                  : 'light-failure-Gaming-para'
               }
             >
               We are having some trouble to complete your request Please try
@@ -110,8 +103,8 @@ class Trending extends Component {
             </p>
             <button
               type="button"
-              className="Retry-trending-button"
-              onClick={this.onClickRetryButton}
+              className="Gaming-Retry-button"
+              onClick={this.onClickRetryGamingButton}
             >
               Retry
             </button>
@@ -119,12 +112,6 @@ class Trending extends Component {
         )
       }}
     </NxtWatchContext.Consumer>
-  )
-
-  onLoadingView = () => (
-    <div data-testid="loader">
-      <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
-    </div>
   )
 
   renderingTheViews = () => {
@@ -142,33 +129,35 @@ class Trending extends Component {
   }
 
   render() {
+    const {GamingVideosData} = this.state
+    console.log(GamingVideosData)
     return (
       <NxtWatchContext.Consumer>
         {value => {
           const {isDarkBtnTheme} = value
-          const overflowContainer = isDarkBtnTheme
-            ? 'Dark-overflow-container1'
-            : 'light-overflow-container1'
-          const TrendingHeader = isDarkBtnTheme
-            ? 'Dark-Trending-Header1'
-            : 'light-Trending-Header1'
-          const logoStylebackground = isDarkBtnTheme
-            ? 'dark-logo-background'
-            : 'light-logo-background'
-          const trendingHeading = isDarkBtnTheme
-            ? 'dark-Trending-heading'
-            : 'light-Trending-heading'
+          const gameOverflowContainer = isDarkBtnTheme
+            ? 'Dark-Game-overflow-container'
+            : 'light-Game-overflow-container'
+          const GamingHeader = isDarkBtnTheme
+            ? 'Dark-Gaming-Header1'
+            : 'light-Gaming-Header1'
+          const gamingLogoStyleBackground = isDarkBtnTheme
+            ? 'dark-logo-Gaming-background'
+            : 'light-logo-Gaming-background'
+          const gamingHeading = isDarkBtnTheme
+            ? 'dark-Gaming-heading'
+            : 'light-Gaming-heading'
           return (
             <>
               <Header />
-              <div className="container1">
+              <div className="Gaming-container1">
                 <AllOptions />
-                <div className={overflowContainer}>
-                  <div className={TrendingHeader}>
-                    <div className={logoStylebackground}>
-                      <HiOutlineFire className="logo-style1" />
+                <div className={gameOverflowContainer}>
+                  <div className={GamingHeader}>
+                    <div className={gamingLogoStyleBackground}>
+                      <SiYoutubegaming className="Gaming-logo-style" />
                     </div>
-                    <h1 className={trendingHeading}>Trending</h1>
+                    <h1 className={gamingHeading}>Gaming</h1>
                   </div>
                   <div>{this.renderingTheViews()}</div>
                 </div>
@@ -181,4 +170,4 @@ class Trending extends Component {
   }
 }
 
-export default Trending
+export default Gaming

@@ -1,21 +1,22 @@
-.Not-Found-container {
+.videoItem-container {
   display: flex;
 }
 
-.light-NotFound-overflow-container1 {
-  overflow-y: scroll;
+.Dark-subVideoItemContainer {
   background-color: #cccccc;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
+  height: 77vh;
+  width: 77vw;
 }
 
-.Dark-NotFound-overflow-container1 {
-  overflow-y: scroll;
+.light-subVideoItemContainer {
   background-color: #0f0f0f;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
+  height: 77vh;
+  width: 77vw;
+}
+
+.main-videoItem-Container {
+  display: flex;
+  flex-direction: column;
 }
 
 .NotFound-Image {

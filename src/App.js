@@ -10,6 +10,8 @@ import Home from './components/Home'
 import NotFound from './components/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 import Trending from './components/Trending'
+import Gaming from './components/Gaming'
+import VideoItemDetails from './components/VideoItemDetails'
 
 import './App.css'
 
@@ -78,7 +80,13 @@ class App extends Component {
           <Route exact path="/login" component={LoginForm} />
           <ProtectedRoute exact path="/" component={Home} />
           <ProtectedRoute exact path="/trending" component={Trending} />
-          <Route component={NotFound} />
+          <ProtectedRoute exact path="/gaming" component={Gaming} />
+          <ProtectedRoute
+            exact
+            path="/videos/:id"
+            component={VideoItemDetails}
+          />
+          <ProtectedRoute component={NotFound} />
         </Switch>
       </NxtWatchContext.Provider>
     )

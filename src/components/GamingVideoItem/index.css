@@ -1,0 +1,27 @@
+.new-Gaming-list-item1 {
+  list-style-type: none;
+  background-color: #ffffff;
+  height: 370px;
+  width: 300px;
+  margin: 15px;
+}
+
+.Gaming-thumbnail-style {
+  height: 250px;
+  width: 300px;
+}
+
+.Gaming-list-heading {
+  color: #181818;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  padding-left: 20px;
+}
+
+.Gaming-list-description {
+  color: #475569;
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 20px;
+}

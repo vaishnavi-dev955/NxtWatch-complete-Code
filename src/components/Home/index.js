@@ -105,7 +105,7 @@ class Home extends Component {
                         : 'light-no-videos-para'
                     }
                   >
-                    Try different keywords or remove search filter
+                    Try different key words or remove search filter
                   </p>
                   <button type="button" className="Retry-button">
                     Retry

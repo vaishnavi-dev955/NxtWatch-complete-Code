@@ -5,7 +5,7 @@ const GamingVideoItem = props => {
   const {GamingVideoItemData} = props
   const {thumbnailUrl, title, viewCount, id} = GamingVideoItemData
   return (
-    <Link to={`/videos/${id}`}>
+    <Link to={`/videos/${id}`} className="nav-link2">
       <li className="new-Gaming-list-item1">
         <img
           src={thumbnailUrl}

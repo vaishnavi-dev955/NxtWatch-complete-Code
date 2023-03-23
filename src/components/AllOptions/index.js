@@ -5,12 +5,9 @@ import './index.css'
 import {HiFire, HiOutlineFire} from 'react-icons/hi'
 
 import {SiYoutubegaming} from 'react-icons/si'
-import {
-  AiFillSave,
-  AiOutlineSave,
-  AiFillHome,
-  AiOutlineHome,
-} from 'react-icons/ai'
+import {AiFillHome, AiOutlineHome} from 'react-icons/ai'
+
+import {BiListPlus} from 'react-icons/bi'
 
 import NxtWatchContext from '../../Context/NxtWatchContext'
 import {LeftContainer, ListContainer1, Listitem} from './styledComponents'
@@ -83,7 +80,7 @@ const AllOptions = () => (
       return (
         <LeftContainer isDarkBtnTheme={isDarkBtnTheme}>
           <ListContainer1>
-            <Link to="/">
+            <Link to="/" className="nav-link">
               <Listitem>
                 <button
                   type="button"
@@ -103,7 +100,7 @@ const AllOptions = () => (
                 </button>
               </Listitem>
             </Link>
-            <Link to="/trending">
+            <Link to="/trending" className="nav-link">
               <Listitem>
                 <button
                   type="button"
@@ -123,7 +120,7 @@ const AllOptions = () => (
                 </button>
               </Listitem>
             </Link>
-            <Link to="/gaming">
+            <Link to="/gaming" className="nav-link">
               <Listitem>
                 <button
                   type="button"
@@ -139,24 +136,26 @@ const AllOptions = () => (
                 </button>
               </Listitem>
             </Link>
-            <Listitem>
-              <button
-                type="button"
-                onClick={onClickSavedButton}
-                className={savedVidoesBtn}
-              >
-                {isDarkBtnTheme ? (
-                  <AiOutlineSave className={logoStyle} />
-                ) : (
-                  <AiFillSave className={logoStyle} />
-                )}
-                {isDarkBtnTheme ? (
-                  <p className={darkThemeSavedPara}>Saved Videos</p>
-                ) : (
-                  <p className={lightThemeSavedPara}>Saved Videos</p>
-                )}
-              </button>
-            </Listitem>
+            <Link to="/saved-videos" className="nav-link">
+              <Listitem>
+                <button
+                  type="button"
+                  onClick={onClickSavedButton}
+                  className={savedVidoesBtn}
+                >
+                  {isDarkBtnTheme ? (
+                    <BiListPlus className={logoStyle} />
+                  ) : (
+                    <BiListPlus className={logoStyle} />
+                  )}
+                  {isDarkBtnTheme ? (
+                    <p className={darkThemeSavedPara}>Saved Videos</p>
+                  ) : (
+                    <p className={lightThemeSavedPara}>Saved Videos</p>
+                  )}
+                </button>
+              </Listitem>
+            </Link>
           </ListContainer1>
           <div>
             <p className={Contactpara}>CONTACT US</p>

@@ -11,6 +11,8 @@ const NxtWatchContext = React.createContext({
   onGamingBtn: () => {},
   onSavedBtn: () => {},
   onToggleTheme: () => {},
+  onAddVideo: () => {},
+  savedVideosList: [],
 })
 
 export default NxtWatchContext

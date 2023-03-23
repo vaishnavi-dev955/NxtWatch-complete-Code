@@ -1,4 +1,4 @@
-import {withRouter} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 
 import Popup from 'reactjs-popup'
 
@@ -47,7 +47,9 @@ const Header = props => {
 
         return (
           <div className={background}>
-            <img src={ImageUrl} alt="website logo" className="image-style" />
+            <Link to="/">
+              <img src={ImageUrl} alt="website logo" className="image-style" />
+            </Link>
             <div className="sub-container1">
               <button
                 type="button"

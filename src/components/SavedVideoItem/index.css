@@ -1,8 +1,8 @@
-.sub-list1 {
+.sub-saved-list1 {
   display: flex;
 }
 
-.new-list-item1 {
+.new-saved-list-item1 {
   list-style-type: none;
   background-color: #ffffff;
   height: 450px;
@@ -10,33 +10,28 @@
   margin: 10px;
 }
 
-.thumbnail-style {
+.thumbnail-saved-style {
   height: 250px;
   width: 300px;
 }
 
-.list-heading {
+.list-saved-heading {
   font-size: 17px;
 }
 
-.channel-logo {
+.channel-saved-logo {
   height: 40px;
   width: 40px;
 }
 
-.main-list-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sub-list2 {
+.sub-saved-list2 {
   display: flex;
 }
 
-.list-description {
+.list-saved-description {
   padding-right: 10px;
 }
 
-.nav-link3 {
+.nav-link5 {
   text-decoration: none;
 }

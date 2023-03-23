@@ -1,0 +1,126 @@
+.container4 {
+  display: flex;
+}
+
+.light-saved-videos-overflow {
+  background-color: #cccccc;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.dark-saved-videos-overflow {
+  background-color: #0f0f0f;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.main-saved-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.no-saved-video-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-saved-video-logo {
+  height: 500px;
+  width: 500px;
+}
+
+.dark-no-saved-video-heading {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.light-no-saved-video-heading {
+  color: #0f0f0f;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dark-no-saved-video-para {
+  color: #cbd5e1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.light-no-saved-video-para {
+  color: #64748b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Dark-saved-video-Header1 {
+  background-color: #231f20;
+  height: 15vh;
+  width: 80vw;
+  margin: 20px;
+  display: flex;
+}
+
+.light-saved-video-Header1 {
+  background-color: #ffffff;
+  height: 15vh;
+  width: 80vw;
+  margin: 20px;
+  display: flex;
+}
+
+.saved-logo-logo-style1 {
+  height: 30px;
+  width: 30px;
+  color: #ff0b37;
+}
+
+.dark-saved-video-background {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 0px solid;
+  background-color: #0f0f0f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.light-saved-video-logo-background {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 0px solid;
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.light-saved-video-heading {
+  color: #0f0f0f;
+  font-size: 35px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding-left: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.dark-saved-video-heading {
+  color: #ffffff;
+  font-size: 35px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding-left: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+}

@@ -28,12 +28,12 @@ const NotFound = () => (
             <div className={overflowNotContainer}>
               <img
                 src={NotFoundImageUrl}
-                alt="NotFound"
+                alt="not found"
                 className="NotFound-Image"
               />
               <h1 className={notFoundHeading}>Page Not Found</h1>
               <p className={notFoundPara}>
-                We are sorry, the page you requested could not be found
+                we are sorry, the page you requested could not be found.
               </p>
             </div>
           </div>

@@ -1,62 +1,175 @@
-.videoItem-container {
+.container3 {
   display: flex;
 }
 
-.Dark-subVideoItemContainer {
+.light-overflow-container3 {
   background-color: #cccccc;
-  height: 77vh;
-  width: 77vw;
+  width: 100%;
+  overflow-y: scroll;
 }
 
-.light-subVideoItemContainer {
+.Dark-uday-container3 {
   background-color: #0f0f0f;
-  height: 77vh;
-  width: 77vw;
+  width: 100%;
+  overflow-y: scroll;
 }
 
-.main-videoItem-Container {
+.Failure-Video-id-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.NotFound-Image {
-  height: 500px;
-  width: 500px;
-  margin-top: 50px;
-}
-
-.light-NotFound-heading {
-  color: #0f0f0f;
-  font-size: 30px;
+.videoId-failure-heading {
+  color: #1e293b;
+  font-size: 28px;
   font-family: 'Roboto';
-  font-weight: bold;
-  padding-left: 20px;
-  font-weight: bold;
 }
 
-.dark-NotFound-heading {
+.failure-videoId-para {
+  color: #475569;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.Retry-videoId-failure-button {
+  background-color: #4656a1;
+  height: 40px;
+  width: 150px;
   color: #ffffff;
-  font-size: 30px;
-  font-family: 'Roboto';
-  font-weight: bold;
-  padding-left: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  border: 0px solid;
+  text-align: center;
 }
 
-.dark-NotFound-para {
-  color: #cbd5e1;
-  font-size: 20px;
-  font-family: 'Roboto';
-  font-weight: bold;
-  padding-left: 20px;
-  font-weight: bold;
+.failure-videoId-logo {
+  height: 400px;
+  width: 400px;
 }
 
-.light-NotFound-para {
+.react-player-style {
+  height: 50vh;
+  width: 80vw;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-Nxtwatch-videoid-heading {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.light-Nxtwatch-videoid-heading {
+  color: #0f0f0f;
+  font-size: 25px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.inner-container {
+  display: flex;
+  padding-left: 20px;
+}
+
+.paragraph-container {
+  display: flex;
+}
+
+.light-Nxtwatch-videoid-paragraph {
+  color: #231f20;
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.dark-Nxtwatch-videoid-paragraph {
+  color: #475569;
+  font-size: 18px;
+  font-family: 'Roboto';
+  padding-left: 10px;
+}
+
+.Thumbnail-videoId {
+  height: 40px;
+  width: 40px;
+}
+
+.paragraph-container2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-container {
+  display: flex;
+  list-style-type: none;
+}
+
+.videoid-responsive-container {
+  height: 80vh;
+  width: 80vw;
+  background-color: transparent;
+}
+
+.icons-button {
+  height: 60px;
+  width: 200px;
+  border: 0px solid;
+  background-color: transparent;
+  display: flex;
+  margin: 10px;
+}
+
+.Non-active-icons-style {
+  height: 30px;
+  width: 30px;
   color: #64748b;
-  font-size: 20px;
-  font-family: 'Roboto';
-  font-weight: bold;
-  padding-left: 20px;
-  font-weight: bold;
+  padding-top: 5px;
+}
+
+.active-icons-style {
+  height: 30px;
+  width: 30px;
+  color: #2563eb;
+  padding-top: 5px;
+}
+
+.Non-active-icons-para {
+  color: #64748b;
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.active-icons-para {
+  color: #2563eb;
+  font-size: 17px;
+  padding-left: 8px;
+}
+
+.dark-icons-para {
+  color: #475569;
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.light-icons-para {
+  color: #231f20;
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.video-id-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.inner-container2 {
+  display: flex;
 }

@@ -18,7 +18,7 @@ const HomeListItem = props => {
   const date = formatDistanceToNow(new Date(newdate))
 
   return (
-    <Link to={`/videos/${id}`}>
+    <Link to={`/videos/${id}`} className="nav-link3">
       <li className="new-list-item1">
         <img
           src={thumbnailUrl}

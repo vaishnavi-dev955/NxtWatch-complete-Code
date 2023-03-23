@@ -12,6 +12,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Trending from './components/Trending'
 import Gaming from './components/Gaming'
 import VideoItemDetails from './components/VideoItemDetails'
+import SavedVideos from './components/SavedVideos'
 
 import './App.css'
 
@@ -23,7 +24,13 @@ class App extends Component {
     isTrendingClick: false,
     isGamingClick: false,
     isSavedVideosClick: false,
+    savedVideosList: [],
   }
+
+  onAddVideo = video =>
+    this.setState(prevState => ({
+      savedVideosList: [...prevState.savedVideosList, video],
+    }))
 
   onToggleTheme = () => {
     this.setState(prevState => ({isDarkBtnTheme: !prevState.isDarkBtnTheme}))
@@ -60,6 +67,7 @@ class App extends Component {
       isTrendingClick,
       isGamingClick,
       isSavedVideosClick,
+      savedVideosList,
     } = this.state
     return (
       <NxtWatchContext.Provider
@@ -69,11 +77,13 @@ class App extends Component {
           isTrendingClick,
           isGamingClick,
           isSavedVideosClick,
+          savedVideosList,
           onToggleTheme: this.onToggleTheme,
           onHomeBtn: this.onHomeBtn,
           onTrendingBtn: this.onTrendingBtn,
           onGamingBtn: this.onGamingBtn,
           onSavedBtn: this.onSavedBtn,
+          onAddVideo: this.onAddVideo,
         }}
       >
         <Switch>
@@ -86,7 +96,8 @@ class App extends Component {
             path="/videos/:id"
             component={VideoItemDetails}
           />
-          <ProtectedRoute component={NotFound} />
+          <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
+          <Route component={NotFound} />
         </Switch>
       </NxtWatchContext.Provider>
     )
